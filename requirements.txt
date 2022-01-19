@@ -17,7 +17,7 @@ seaborn==0.10.1
 six==1.15.0               # via cycler, python-dateutil
 scikit-learn              # for ML projects
 opencv-python             # for ML projects
-klampt==0.8.5
+klampt==0.9.0
 ipywidgets
 PyOpenGL
 svgwrite                  # via svgpathtools
