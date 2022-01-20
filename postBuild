@@ -6,6 +6,7 @@ jupyter nbextension enable toc2/main
 jupyter nbextension enable equation-numbering/main
 jupyter serverextension enable --py nbgitpuller --sys-prefix
 
+#Update the latest version of Klampt
 git clone --depth 1 https://github.com/krishauser/Klampt
 cd Klampt/Python
 python patch_a_pip_install.py
