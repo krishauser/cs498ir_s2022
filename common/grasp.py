@@ -1,4 +1,4 @@
-from gripper import GripperInfo
+from klampt.model.robotinfo import GripperInfo
 from klampt.model import contact
 from klampt.model import ik
 from klampt.model.contact import ContactPoint
