@@ -1,0 +1,35 @@
+<world>
+  <terrain name="floor" file="../data/terrains/plane.env"/>
+  <!-- table -->
+  <terrain file="../data/terrains/cube.off" scale="0.05 0.05 0.6" translation="0.4 0.25 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.05 0.05 0.6" translation="0.4 -0.25 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.05 0.05 0.6" translation="0.9 0.25 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.05 0.05 0.6" translation="0.9 -0.25 0.01">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.6 0.6 0.02" translation="0.375 -0.275 0.615">
+     <display color="0.4 0.3 0.2"/>
+  </terrain>
+  <!-- box -->
+  <terrain file="../data/terrains/cube.off" scale="0.6 0.4 0.4" translation="-0.1 -0.7 0.0">
+     <display color="0.3 0.6 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.6 0.02 0.1" translation="-0.1 -0.7 0.4">
+     <display color="0.3 0.6 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.6 0.02 0.1" translation="-0.1 -0.32 0.4">
+     <display color="0.3 0.6 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.02 0.4 0.1" translation="-0.1 -0.7 0.4">
+     <display color="0.3 0.6 0.2"/>
+  </terrain>
+  <terrain file="../data/terrains/cube.off" scale="0.02 0.4 0.1" translation="0.48 -0.7 0.4">
+     <display color="0.3 0.6 0.2"/>
+  </terrain>
+</world>
