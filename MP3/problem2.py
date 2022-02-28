@@ -131,7 +131,7 @@ def problem_2():
         qrob = solve_robot_ik(robot,gripper,Ttarget)
         if qrob is not None:
             #inject the finger configuration
-            qrob = gripper.set_finger_config(qrob,finger_traj.milestones[-1])
+            qrob = gripper.setFingerConfig(qrob,finger_traj.milestones[-1])
             #set the robot configuration
             robot.setConfig(qrob)
             vis.setColor(vis.getItemName(robot.link(gripper.baseLink)),0,1,0)
