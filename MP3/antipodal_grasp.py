@@ -171,7 +171,7 @@ class AntipodalGrasp:
         res.ik_constraint.setLinks(gripper_info.baseLink)
         finger_tip_radius = gripperInfo.fingerDepth*0.5
         finger_pos = vectorops.madd(gripper_info.center,gripper_info.primaryAxis,gripper_info.fingerLength-finger_tip_radius)
-        res.ik_constraint.setFixedPoint(finger_pos,self.center)
+        res.ik_constraint.setFixedPoint(gripper_info.baseLink,finger_pos,self.center)
         if self.approach is None:
             res.ik_constraint.setAxialRotConstraint(gripper_info.secondaryAxis,self.axis)
         else:
