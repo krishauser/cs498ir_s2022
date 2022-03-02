@@ -187,7 +187,7 @@ def problem_2():
         if len(obstacles)==0:
             load_obstacles()
         t0 = time.time()
-        q_robot,Tgripper = solve_grasp_problem(robot,gripper,obj,grasp_db,obstacles)
+        q_robot,Tgripper,grasp = solve_grasp_problem(robot,gripper,obj,grasp_db,obstacles)
         t1 = time.time()
         print("Solved for grasp in %.3fs"%(t1-t0))
         if q_robot is not None:
