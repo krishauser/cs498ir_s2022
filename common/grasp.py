@@ -101,7 +101,7 @@ class Grasp:
         """Creates the grasp from a JSON-compatible object previously saved by
         toJson.
         """
-        self.ik_constraint = io.fromJson(jsonObj['ik_constraint'])
+        self.ik_constraint = io.from_json(jsonObj['ik_constraint'])
         self.finger_links = jsonObj['finger_links']
         self.finger_config = jsonObj['finger_config']
         self.score = jsonObj.get('score',0)

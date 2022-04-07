@@ -215,7 +215,7 @@ class RGBDScan:
         if format == 'PointCloud':
             from klampt import PointCloud
             pc = PointCloud()
-            pc.setPoints(res.shape[0],res[:,:3].flatten())
+            pc.setPoints(res[:,:3])
             pstart = 0
             if have_colors:
                 pc.addProperty('r')

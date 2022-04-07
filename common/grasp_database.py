@@ -1,4 +1,4 @@
-from gripper import GripperInfo
+from klampt.model.robotinfo import GripperInfo
 from grasp import *
 from klampt.model import ik
 from klampt.math import vectorops,so3,se3
