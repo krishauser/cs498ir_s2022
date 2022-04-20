@@ -201,6 +201,12 @@ if __name__ == '__main__':
     im = None
 
     def initVis():
+        for i in range(controller.world.robot(0).numLinks()):
+            controller.world.robot(0).link(i).appearance().setSilhouette(0)
+        for i in range(controller.world.numRigidObjects()):
+            controller.world.rigidObject(i).appearance().setSilhouette(0)
+        for i in range(controller.world.numTerrains()):
+            controller.world.terrain(i).appearance().setSilhouette(0)
         vis.add("world",controller.world)
         vis.add("target",controller.robotModel().getConfig(),color=(1,1,0,0.5))
         vis.edit("target")
@@ -229,8 +235,9 @@ if __name__ == '__main__':
                     plotShown = True
                 else:
                     im.set_array(rgb)
-                    plt.pause(0.01)
-
+                    plt.gcf().canvas.draw()
+                    
+                    
             controllerVis.update()
             
     def closeVis():

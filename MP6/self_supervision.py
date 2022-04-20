@@ -82,7 +82,7 @@ if __name__ == '__main__':
                     plotShown = True
                 else:
                     im.set_array(rgb)
-                    plt.pause(0.01)
+                    plt.gcf().canvas.draw()
 
             controllerVis.update()
 
