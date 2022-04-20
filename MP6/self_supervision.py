@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from PIL import Image
 
-EXAMPLES_FOLDER = 'examples'
+DATASET_FOLDER = 'generated_data'
 
 def randomize_world(world : WorldModel, sim : Simulator):
     """Helper function to help reset the world state. """
